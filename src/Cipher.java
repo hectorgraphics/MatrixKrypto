@@ -33,10 +33,11 @@ public class Cipher {
 	 */
 	private List<Integer> encipher(char[] entry) {
 		for (var i = 0; i < entry.length; i++) {
-			var letter = entry[i] % 65; // removes the ASCII equivalent
-			if (letter == 32) letter = 28; // converts spaces to match the array
+			var letterVal = entry[i] % 65; // removes the ASCII equivalent
+
+			if (letterVal == 32) letterVal = 28; // converts spaces to match the array
 //                System.out.print(letter + " ");
-			msgIntVal.add(letter);
+			msgIntVal.add(letterVal);
 		}
 		return msgIntVal;
 	}
@@ -45,22 +46,24 @@ public class Cipher {
 	private void reshaper(List<Integer> entry, int shaper) {
 		System.out.println("Reshaper Parameter = " + entry);
 		// ROW = 4, COLUMN = Entry / ROW
-		var matrix = new int[shaper][columnSizer(entry, shaper)];
-		var counter = 0; var i = 0; var j = 0;
-		while (counter != entry.size()) {
-			if (i == shaper - 1) {
-				if (j == (int) Math.ceil(entry.size()/4) -1) break;
-				j++; i = 0;
-			}
-			else {
-				for (i = 0; i < shaper-1; i++) {
-					matrix[i][j] = entry.get(counter);
-					counter++;
-				}
-			}
-		}
+		var matrix = new int[shaper+1][columnSizer(entry, shaper)];
+		var counter = 0; var row = 0; var col = 0;
 
-		showBoard(matrix);
+		try {
+				for (col = 0; col < matrix[row].length; col++) {
+					for (row = 0; row < shaper; row++) { // removing - 1 returns an error
+						matrix[row][col] = entry.get(counter);
+						if (entry.size() / shaper % shaper != 0) {
+							matrix[row + 1][col] = entry.get(counter);
+						}
+						counter++;
+					}
+				}
+		} catch (IndexOutOfBoundsException ioobe) {
+			ioobe.getMessage();
+		}
+		;
+		dispMatrix(matrix);
 		System.out.println();
 	}
 
@@ -71,25 +74,22 @@ public class Cipher {
 		       (int) Math.floor(entry.size() / shaper);
 	}
 
-	private void showBoard(int[][] matrix) {
+	private void dispMatrix(int[][] matrix) {
 
-		System.out.println("-----------------------------------------------------------");
-		for(int i = 0; i < 4; i++) {
+		System.out.println("-----------------------------------");
+		for(int i = 0; i < matrix.length-1; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for(int j = 0; j < matrix[i].length; j++) {
+				if (matrix[i][j] < 11)
+				System.out.print(matrix[i][j] + "  | ");
+				else
 				System.out.print(matrix[i][j] + " | ");
 			}
 			System.out.println();
-			System.out.println("-----------------------------------------------------------");
+			System.out.println("-----------------------------------");
 		}
 	}
 
-//    private char[] setAlphabet() {
-//        // 0x5B using the ASCII representation for { being after 'Z'
-//        return IntStream.range('A', 0x5B)
-//                        .mapToObj(c -> (char) c)
-//                        .forEach(s -> reference.add(s));
-//    }
 
 	public static void main(String[] args) {
 //        Scanner in = new Scanner(System.in);
