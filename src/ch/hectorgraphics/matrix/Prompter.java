@@ -1,3 +1,5 @@
+package ch.hectorgraphics.matrix;
+
 import java.util.Scanner;
 /**
  * @author jonathanhector on 15.03.17.

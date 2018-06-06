@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package ch.hectorgraphics.matrix;
+
 import java.util.Scanner;
 
 public class Operations extends BoardInitializer {

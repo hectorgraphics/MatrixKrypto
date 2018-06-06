@@ -1,7 +1,7 @@
+package ch.hectorgraphics.matrix;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 @SuppressWarnings("all")
 public class Cipher {
@@ -11,7 +11,7 @@ public class Cipher {
 	private final List<Character> msgList;
 	private List<Integer> msgIntVal;
 	private char[] msgChar;
-
+	private int[][] matrix;
 	private final int SHAPER = 4;
 
 	public Cipher(String msg) {
@@ -29,6 +29,7 @@ public class Cipher {
 		System.out.println("Current message: " + msgList.toString());
 		encipher(msgChar);
 		reshaper(msgIntVal);
+		transpose(matrix);
 	}
 
 	/**
@@ -47,11 +48,15 @@ public class Cipher {
 		return msgIntVal;
 	}
 
-	// Shaper must be a multiple of 4
-	private void reshaper(List<Integer> entry) {
+	/**
+	 *
+	 * @param entry is the original message in the encoded format
+	 * @return the encoded message as a  4 x m
+	 */
+	private int[][] reshaper(List<Integer> entry) {
 		System.out.println("Reshaper Parameter = " + entry);
 		// ROW = 4, COLUMN = Entry / ROW
-		var matrix = new int[SHAPER + 1][columnSizer(entry, SHAPER)];
+		matrix = new int[SHAPER + 1][columnSizer(entry, SHAPER)];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
@@ -59,18 +64,19 @@ public class Cipher {
 			for (col = 0; col < matrix[row].length; col++) {
 				for (row = 0; row < SHAPER; row++) { // removing - 1 returns an error
 					matrix[row][col] = entry.get(counter);
-					if (entry.size() / SHAPER % SHAPER != 0) {
+					if ((entry.size() / SHAPER) % SHAPER != 0) {
 						matrix[row + 1][col] = entry.get(counter);
 					}
 					counter++;
 				}
 			}
+
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
-		dispMatrix(matrix);
-		System.out.println("==================================================");
-		transpose(msgIntVal);
+		dispMatrix(reducer(matrix));
+
+		return matrix;
 	}
 
 	// determines if a line needs an extra column or not
@@ -78,31 +84,48 @@ public class Cipher {
 		return entry.size() % SHAPER != 0 ? (int) Math.floor(entry.size() / SHAPER) + 1 : (int) Math.floor(entry.size() / SHAPER);
 	}
 
-	private void transpose(List<Integer> entry) {
-		var matrix = new int[columnSizer(entry, SHAPER)][SHAPER + 1];
+	/**
+	 * @param originalMat takes the originalMat
+	 * @return the matrix with the last line removed
+	 */
+	private int[][] reducer(int[][] originalMat) {
+		var newMatrix = new int[originalMat.length-1][originalMat[0].length];
+		for (int i = 0; i < newMatrix.length; i++) { // The '-1' doesn't display the last line in the matrix
+			for (int j = 0; j < newMatrix[i].length; j++) {
+				newMatrix[i][j] = originalMat[i][j];
+			}
+		}
+		return newMatrix;
+	}
+
+	/**
+	 *
+	 * @param matEntry
+	 */
+	private void transpose(int[][] matEntry) {
+		System.out.println("==================================");
+		System.out.println("  ******** TRANSPOSE ************");
+		System.out.println("==================================");
+		var newMatrix = new int[matEntry[0].length][SHAPER];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
 		try {
-			for (row = 0; row < SHAPER; row++) { // removing - 1 returns an error
-				for (col = 0; col < matrix[row].length; col++) {
-					matrix[row][col] = entry.get(counter);
-					if (entry.size() / SHAPER % SHAPER != 0) {
-						matrix[row+1][col] = entry.get(counter);
-					}
-					counter++;
+			for (row = 0; row < matEntry.length; row++) {
+				for (col = 0; col < matEntry[0].length; col++) {
+					newMatrix[col][row] = matEntry[row][col];
 				}
 			}
+
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
-		dispMatrix(matrix);
+		dispMatrix(newMatrix);
 	}
 
 	private void dispMatrix(int[][] matrix) {
-
 		System.out.println("-----------------------------------");
-		for (int i = 0; i < matrix.length-1; i++) { // The '-1' doesn't display the last line in the matrix
+		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for (int j = 0; j < matrix[i].length; j++) {
 				if (matrix[i][j] < 11)

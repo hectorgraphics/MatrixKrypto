@@ -1,4 +1,4 @@
-import javafx.css.Size;
+package ch.hectorgraphics.matrix;
 
 import java.util.Scanner;
 

@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8db95449-390b-488a-9c8e-728c2d21e88d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jpro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jpro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Alphabet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/BoardInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Cipher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Operations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Prompter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/TheMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prompter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TheMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,69 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Operations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+        <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+            <state relative-caret-position="203">
+              <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#dispMatrix#0;class#Cipher#0" />
-                <element signature="e#2551#2597#0" />
+                <element signature="e#103#127#0" expanded="true" />
+                <element signature="method#columnSizer#0;class#Cipher#0" />
+                <element signature="docComment;method#reducer#0;class#Cipher#0" />
+                <element signature="method#reducer#0;class#Cipher#0" />
+                <element signature="method#main#0;class#Cipher#0" />
+                <element signature="e#2872#2918#0" />
+                <element signature="method#toString#0;class#Cipher#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alphabet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Prompter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Prompter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TheMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -89,17 +52,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>displayMatrix</find>
+      <find>reference</find>
+      <find>shaper</find>
     </findStrings>
     <replaceStrings>
       <replace>dispMatrix</replace>
+      <replace>REFERENCE</replace>
+      <replace>SHAPER</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,9 +88,11 @@
         <option value="$PROJECT_DIR$/src/Size.java" />
         <option value="$PROJECT_DIR$/src/Alphabet.java" />
         <option value="$PROJECT_DIR$/src/Initializer.java" />
-        <option value="$PROJECT_DIR$/src/BoardInitializer.java" />
         <option value="$PROJECT_DIR$/src/Operations.java" />
+        <option value="$PROJECT_DIR$/src/BoardInitializer.java" />
         <option value="$PROJECT_DIR$/src/Cipher.java" />
+        <option value="$PROJECT_DIR$/src/test/ColByColFilling.java" />
+        <option value="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" />
       </list>
     </option>
   </component>
@@ -137,10 +106,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2420" />
-    <option name="y" value="-627" />
-    <option name="width" value="1106" />
-    <option name="height" value="1418" />
+    <option name="y" value="22" />
+    <option name="width" value="926" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -149,7 +117,33 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MatrixProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatrixProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatrixProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatrixProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatrixProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatrixProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -182,12 +176,12 @@
   </component>
   <component name="RunManager" selected="Application.Cipher">
     <configuration name="Cipher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cipher" />
+      <option name="MAIN_CLASS_NAME" value="ch.hectorgraphics.matrix.Cipher" />
       <module name="MatrixProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="TheMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TheMatrix" />
+      <option name="MAIN_CLASS_NAME" value="ch.hectorgraphics.matrix.TheMatrix" />
       <module name="MatrixProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -259,15 +253,17 @@
       <workItem from="1527581756373" duration="1213000" />
       <workItem from="1527842397676" duration="8761000" />
       <workItem from="1527938980781" duration="886000" />
-      <workItem from="1527947631385" duration="22750000" />
+      <workItem from="1527947631385" duration="23436000" />
+      <workItem from="1528147088830" duration="3103000" />
+      <workItem from="1528189943158" duration="10625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38246000" />
+    <option name="totallyTimeSpent" value="52660000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2420" y="-627" width="1106" height="1418" extended-state="0" />
+    <frame x="0" y="22" width="926" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -280,11 +276,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22247024" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3081761" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18669528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18034557" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -304,7 +300,6 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info id="simpleUML" order="7" />
@@ -316,6 +311,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="UI Designer" order="6" />
@@ -326,9 +322,9 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="PlantUML" order="8" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
@@ -338,6 +334,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
@@ -365,395 +366,371 @@
     <option name="serverIp" value="localhost" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="36" column="44" lean-forward="true" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
@@ -762,57 +739,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Size.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java" />
-    <entry file="file://$PROJECT_DIR$/src/BoardInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="32">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alphabet.java">
+    <entry file="file://$PROJECT_DIR$/src/test/ColByColFilling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prompter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="192">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+        <state relative-caret-position="373">
+          <caret line="41" selection-start-line="41" selection-end-line="43" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="e#2551#2597#0" />
+            <element signature="e#103#127#0" expanded="true" />
+            <element signature="method#columnSizer#0;class#Cipher#0" />
+            <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#main#0;class#Cipher#0" />
+            <element signature="e#2872#2918#0" />
+            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>

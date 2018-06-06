@@ -1,3 +1,5 @@
+package ch.hectorgraphics.matrix;
+
 /**
  * @author jonathanhector on 27.02.17.
  */
