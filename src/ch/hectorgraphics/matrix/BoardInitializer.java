@@ -17,7 +17,11 @@ public class BoardInitializer {
 		showBoard();
 		boardInitializer();
 	}
-	
+
+	public BoardInitializer() {
+
+	}
+
 	public void start() {
 		Scanner in = new Scanner(System.in);
 		var n = in.nextInt();
@@ -37,7 +41,7 @@ public class BoardInitializer {
 			System.out.println("-------------");
 		}
 	}
-	
+
 	// TODO: Change the iterator
 	private void boardInitializer() {
 		for(int i = 0; i < 3; i++) {

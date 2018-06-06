@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Operations {
+public class Operations extends BoardInitializer {
     
     private int n, m;
     private int[][] matrix;
@@ -10,9 +10,14 @@ public class Operations {
     private Scanner in = new Scanner(System.in);
     
     public Operations(BoardInitializer board) {
+        super();
         matrix = board.getBoard(n, m);
     }
-    
+
+    public Operations() {
+
+    }
+
     public int[][] getMatrixSize(int n, int m) {
         return new int[n][m];
     }
