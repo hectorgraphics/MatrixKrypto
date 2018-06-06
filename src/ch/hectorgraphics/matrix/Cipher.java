@@ -1,10 +1,8 @@
 package ch.hectorgraphics.matrix;
 
 import java.util.ArrayList;
-import java.util.IllegalFormatException;
 import java.util.IllegalFormatWidthException;
 import java.util.List;
-import java.util.stream.IntStream;
 
 @SuppressWarnings("all")
 public class Cipher {
@@ -130,8 +128,8 @@ public class Cipher {
 
 	/**
 	 * @param matA gets the first matrix
-	 * @param matB
-	 * @return
+	 * @param matB gets the second matrix
+	 * @return the addition of both matrixes
 	 */
 	private List<Integer> addOfMatrix(List<Integer> matA, List<Integer> matB) {
 		var addMatrix = new ArrayList<Integer>();
@@ -164,6 +162,12 @@ public class Cipher {
 		return newScalarMat;
 	}
 
+	/**
+	 *
+	 * @param matA is the first matrix
+	 * @param matB is the second matrix
+	 * @return returns a new matrix of size n x n
+	 */
 	private int[][] mulOfMat(int[][] matA, int[][] matB) {
 		System.out.println();
 		System.out.println("========================================");
@@ -171,9 +175,11 @@ public class Cipher {
 		System.out.println("========================================");
 
 		var resultMat = new int[matA.length][matB[0].length];
-		if (matA.length != matB[0].length)
+		if (matA.length != matB[0].length) {
+			System.err.println("Please change the size of the matrix so that the column or row are equal!!!");;
 			throw new IllegalFormatWidthException(matA[0].length - matB.length);
-		try {
+		}
+			try {
 			/* Loop through each and get product, then sum up and store the value */
 			for (int i = 0; i < matA.length; i++) {
 				for (int j = 0; j < matB[0].length; j++) {
@@ -196,35 +202,39 @@ public class Cipher {
 	 * @param matrix is the matrix to be displayed
 	 */
 	private void dispMatrix(int[][] matrix) {
+//		var counter = 1L;
 		System.out.println("-----------------------------------");
 		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for (int j = 0; j < matrix[i].length; j++) {
 				if (matrix[i][j] < 10)
-					System.out.print(matrix[i][j] + "  | ");
+					System.out.print(matrix[i][j] + "   | ");
+				else if (matrix[i][j] > 99)
+					System.out.print(matrix[i][j] + " | ");
 				else
 					System.out.print(matrix[i][j] + " | ");
 			}
 			System.out.println();
 			System.out.println("-----------------------------------");
+//			System.out.println("\nCounter: " + counter++);
 		}
 	}
 
 	/**
-	 *
+	 *         Always multiplies the row of matrix A by column of matrix B
 	 * @param n represents the row
 	 * @param m represents the column
 	 * @param maxVal is number representing the
-	 * @return n x n size of the matrix after having been multiplied
+	 * @return a matrix with size n x m within the maxVal limit determined
 	 */
-	private int[][] matrixGenerator(int n, int m, int maxVal) {
-		var genMat = new int[n][m];
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
+	private int[][] matrixGenerator(int row, int col, int maxVal) {
+		var genMat = new int[row][col];
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
 				genMat[i][j] = (int) (Math.random() * maxVal);
 			}
-
 		}
+//		dispMatrix(genMat);
 		return genMat;
 	}
 
@@ -234,8 +244,10 @@ public class Cipher {
 		//        var currentMsg = in.nextLine();
 		var currentMsg = "ABORT OPERATION IMMEDIATELY";
 		Cipher cipher = new Cipher(currentMsg); // TODO: To be modified so that it takes args instead of an input
+		// fixme: doesn't work if the matrix row is not the same size as the column of the seccond matrix OR
+		// fixme: if the row or column is greater than 3
 		var mat1 = cipher.matrixGenerator(3, 4, 21);
-		var mat2 = cipher.matrixGenerator(5, 5, 21);
+		var mat2 = cipher.matrixGenerator(4, 3, 10);
 		cipher.mulOfMat(mat1, mat2);
 
 	}

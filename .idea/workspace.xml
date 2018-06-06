@@ -19,19 +19,31 @@
           <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="718">
-                  <caret line="217" column="68" selection-start-line="217" selection-start-column="68" selection-end-line="217" selection-end-column="68" />
+                <state relative-caret-position="808">
+                  <caret line="244" column="55" lean-forward="true" selection-start-line="244" selection-start-column="55" selection-end-line="244" selection-end-column="55" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#174#198#0" expanded="true" />
+                    <element signature="docComment;method#encipher#0;class#Cipher#0" />
+                    <element signature="method#encipher#0;class#Cipher#0" />
+                    <element signature="docComment;method#reshape#0;class#Cipher#0" />
+                    <element signature="method#reshape#0;class#Cipher#0" />
                     <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
                     <element signature="method#columnSizer#0;class#Cipher#0" />
                     <element signature="docComment;method#reducer#0;class#Cipher#0" />
+                    <element signature="method#reducer#0;class#Cipher#0" />
                     <element signature="docComment;method#transpose#0;class#Cipher#0" />
+                    <element signature="method#transpose#0;class#Cipher#0" />
                     <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
                     <element signature="method#addOfMatrix#0;class#Cipher#0" />
                     <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+                    <element signature="method#scalarMul#0;class#Cipher#0" />
+                    <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+                    <element signature="method#mulOfMat#0;class#Cipher#0" />
+                    <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
                     <element signature="method#dispMatrix#0;class#Cipher#0" />
+                    <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+                    <element signature="method#matrixGenerator#0;class#Cipher#0" />
                   </folding>
                 </state>
               </provider>
@@ -44,8 +56,8 @@
           <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="542">
-                  <caret line="74" selection-start-line="74" selection-end-line="74" />
+                <state relative-caret-position="299">
+                  <caret line="212" column="54" selection-start-line="212" selection-start-column="54" selection-end-line="212" selection-end-column="54" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;method#reshape#0;class#Cipher#0" />
@@ -56,7 +68,6 @@
                     <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
                     <element signature="method#addOfMatrix#0;class#Cipher#0" />
                     <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
-                    <element signature="method#dispMatrix#0;class#Cipher#0" />
                   </folding>
                 </state>
               </provider>
@@ -251,12 +262,12 @@
       <workItem from="1527947631385" duration="23436000" />
       <workItem from="1528147088830" duration="3103000" />
       <workItem from="1528189943158" duration="20386000" />
-      <workItem from="1528280614389" duration="10664000" />
+      <workItem from="1528280614389" duration="15052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73085000" />
+    <option name="totallyTimeSpent" value="77473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1931" y="-627" width="2060" height="1418" extended-state="0" />
@@ -264,7 +275,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.15303983" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.15252976" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -272,7 +283,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24627976" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18601191" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -333,7 +344,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
@@ -382,15 +393,27 @@
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -436,15 +459,27 @@
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -490,15 +525,27 @@
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -544,15 +591,27 @@
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -570,15 +629,27 @@
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -652,15 +723,27 @@
           <caret line="36" column="44" lean-forward="true" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -769,19 +852,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="808">
+          <caret line="244" column="55" lean-forward="true" selection-start-line="244" selection-start-column="55" selection-end-line="244" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#encipher#0;class#Cipher#0" />
+            <element signature="method#encipher#0;class#Cipher#0" />
             <element signature="docComment;method#reshape#0;class#Cipher#0" />
+            <element signature="method#reshape#0;class#Cipher#0" />
             <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
+            <element signature="method#reducer#0;class#Cipher#0" />
             <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="method#transpose#0;class#Cipher#0" />
             <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
             <element signature="method#addOfMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+            <element signature="method#scalarMul#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
+            <element signature="method#matrixGenerator#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
