@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.IllegalFormatException;
 import java.util.IllegalFormatWidthException;
 import java.util.List;
+import java.util.stream.IntStream;
 
 @SuppressWarnings("all")
 public class Cipher {
@@ -14,18 +15,16 @@ public class Cipher {
 	private List<Integer> msgIntVal;
 	private String msg2;
 	private char[] msgChar1;
-	private char[] msgChar2;
-	private int[][] matrix;
+//	private int[][] matrix;
 	private int[][] transMat;
 	private final int SHAPER = 4;
 
-	public Cipher(String msg, String msg2) {
+	public Cipher(String msg) {
 		msgList = new ArrayList<>();
 		msgChar1 = msg.toCharArray();
-		msgChar2 = msg.toCharArray();
 		msgIntVal = new ArrayList<>();
 
-		System.out.println("Current Message: " + msg);
+//		System.out.println("Current Message: " + msg);
 		start();
 	}
 
@@ -35,7 +34,6 @@ public class Cipher {
 		//		transpose(matrix);
 		//		addOfMatrix(msgIntVal, msgIntVal);
 		//		scalarMul(msgIntVal, 4);
-//		mulOfMat(encipher(msgChar1), encipher(msgChar2));
 	}
 
 	/**
@@ -53,15 +51,14 @@ public class Cipher {
 		}
 		return msgIntVal;
 	}
-	
+
 	/**
 	 * @param entry is the original message in the encoded format
 	 * @return the encoded message as a  4 x m
 	 */
 	private int[][] reshape(List<Integer> entry) {
-		System.out.println("Encoded Value: " + entry);
 		// ROW = 4, COLUMN = Entry / ROW
-		matrix = new int[SHAPER + 1][columnSizer(entry)];
+		var matrix = new int[SHAPER + 1][columnSizer(entry)];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
@@ -75,7 +72,6 @@ public class Cipher {
 					counter++;
 				}
 			}
-
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
@@ -168,29 +164,37 @@ public class Cipher {
 		return newScalarMat;
 	}
 
-	private int[][] mulOfMat(List<Integer> matA, List<Integer> matB) {
+	private int[][] mulOfMat(int[][] matA, int[][] matB) {
 		System.out.println();
 		System.out.println("========================================");
 		System.out.println("  ***** MUTIPLICATION OF MATRIX *****");
 		System.out.println("========================================");
-		var reshapeA = reshape(matA);
-		var reshapeB = reshape(matB);
-		var resultMat = new int[reshapeA.length][reshapeB[0].length];
-//		try {
-//			if (reshapeA[0].length != reshapeB.length && reshapeA.length != reshapeB[0].length)
-//				throw new IllegalFormatWidthException(reshapeA[0].length - reshapeB.length);
-//			for (var row = 0; row < reshapeA[row].length; row++) {
-//				for (var col = 0; col < reshapeB[col].length; col++) {
-//					resultMat[row][col] = (reshapeA[row][col] * reshapeB[col][row]) + reshapeA[row + 1][col] + reshapeA[row + 2][col];
-//				}
-//			}
-//		} catch (NullPointerException npe) {
-//			npe.getCause();
-//		}
+
+		var resultMat = new int[matA.length][matB[0].length];
+		if (matA.length != matB[0].length)
+			throw new IllegalFormatWidthException(matA[0].length - matB.length);
+		try {
+			/* Loop through each and get product, then sum up and store the value */
+			for (int i = 0; i < matA.length; i++) {
+				for (int j = 0; j < matB[0].length; j++) {
+					for (int k = 0; k < matA[0].length; k++) {
+						resultMat[i][j] += matA[i][k] * matB[k][j];
+					}
+				}
+			}
+		} catch (NullPointerException npe) {
+			npe.getCause();
+		} catch (ArrayIndexOutOfBoundsException aioob) {
+			aioob.getCause();
+		}
 		dispMatrix(resultMat);
 		return resultMat;
 	}
 
+	/**
+	 *
+	 * @param matrix is the matrix to be displayed
+	 */
 	private void dispMatrix(int[][] matrix) {
 		System.out.println("-----------------------------------");
 		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
@@ -206,13 +210,33 @@ public class Cipher {
 		}
 	}
 
+	/**
+	 *
+	 * @param n represents the row
+	 * @param m represents the column
+	 * @param maxVal is number representing the
+	 * @return n x n size of the matrix after having been multiplied
+	 */
+	private int[][] matrixGenerator(int n, int m, int maxVal) {
+		var genMat = new int[n][m];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				genMat[i][j] = (int) (Math.random() * maxVal);
+			}
+
+		}
+		return genMat;
+	}
+
 	public static void main(String[] args) {
 		//        Scanner in = new Scanner(System.in);
 		//        System.out.println("Please enter the message to cipher:");
 		//        var currentMsg = in.nextLine();
 		var currentMsg = "ABORT OPERATION IMMEDIATELY";
-		var msg2 = "Hello there World";
-		Cipher cipher = new Cipher(currentMsg, msg2); // TODO: To be modified so that it takes args instead of an input
+		Cipher cipher = new Cipher(currentMsg); // TODO: To be modified so that it takes args instead of an input
+		var mat1 = cipher.matrixGenerator(3, 4, 21);
+		var mat2 = cipher.matrixGenerator(5, 5, 21);
+		cipher.mulOfMat(mat1, mat2);
 
 	}
 }
