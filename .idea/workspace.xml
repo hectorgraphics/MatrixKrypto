@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8db95449-390b-488a-9c8e-728c2d21e88d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/ch/hectorgraphics/matrix/Cipher.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -13,28 +16,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#103#127#0" expanded="true" />
-                <element signature="method#columnSizer#0;class#Cipher#0" />
-                <element signature="docComment;method#reducer#0;class#Cipher#0" />
-                <element signature="method#reducer#0;class#Cipher#0" />
-                <element signature="method#dispMatrix#0;class#Cipher#0" />
-                <element signature="method#main#0;class#Cipher#0" />
-                <element signature="e#2872#2918#0" />
-                <element signature="method#toString#0;class#Cipher#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.51964283">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="43">
+                  <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#174#198#0" expanded="true" />
+                    <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
+                    <element signature="method#columnSizer#0;class#Cipher#0" />
+                    <element signature="docComment;method#reducer#0;class#Cipher#0" />
+                    <element signature="docComment;method#transpose#0;class#Cipher#0" />
+                    <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+                    <element signature="method#addOfMatrix#0;class#Cipher#0" />
+                    <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+                    <element signature="method#dispMatrix#0;class#Cipher#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
+                    <element signature="method#columnSizer#0;class#Cipher#0" />
+                    <element signature="docComment;method#reducer#0;class#Cipher#0" />
+                    <element signature="docComment;method#transpose#0;class#Cipher#0" />
+                    <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+                    <element signature="method#addOfMatrix#0;class#Cipher#0" />
+                    <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
+                    <element signature="method#dispMatrix#0;class#Cipher#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -93,7 +125,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="929" />
     <option name="height" value="1028" />
@@ -105,33 +137,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MatrixProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatrixProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MatrixProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatrixProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MatrixProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatrixProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -140,7 +146,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -243,15 +249,16 @@
       <workItem from="1527938980781" duration="886000" />
       <workItem from="1527947631385" duration="23436000" />
       <workItem from="1528147088830" duration="3103000" />
-      <workItem from="1528189943158" duration="12865000" />
+      <workItem from="1528189943158" duration="20386000" />
+      <workItem from="1528280614389" duration="4594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54900000" />
+    <option name="totallyTimeSpent" value="67015000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="926" height="1028" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -264,7 +271,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3081761" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32285115" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -290,10 +297,9 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -310,11 +316,12 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="PlantUML" order="8" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="PlantUML" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info id="simpleUML" order="7" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,9 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -377,14 +381,15 @@
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -393,9 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -433,14 +435,15 @@
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -449,9 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,14 +489,15 @@
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -505,9 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,14 +543,15 @@
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -561,9 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,14 +569,15 @@
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -617,9 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,14 +651,15 @@
           <caret line="36" column="44" lean-forward="true" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -673,9 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,22 +740,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ColByColFilling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ColByColFilling.java" />
     <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -791,18 +768,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="43">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#103#127#0" expanded="true" />
+            <element signature="e#174#198#0" expanded="true" />
+            <element signature="docComment;method#columnSizer#0;class#Cipher#0" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
-            <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="docComment;method#transpose#0;class#Cipher#0" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#scalarMul#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
-            <element signature="method#main#0;class#Cipher#0" />
-            <element signature="e#2872#2918#0" />
-            <element signature="method#toString#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
