@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8db95449-390b-488a-9c8e-728c2d21e88d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Alphabet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/BoardInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Cipher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Operations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/Prompter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/TheMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Alphabet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/BoardInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prompter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Prompter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TheMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/TheMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +17,15 @@
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+            <state relative-caret-position="464">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#103#127#0" expanded="true" />
                 <element signature="method#columnSizer#0;class#Cipher#0" />
                 <element signature="docComment;method#reducer#0;class#Cipher#0" />
                 <element signature="method#reducer#0;class#Cipher#0" />
+                <element signature="method#dispMatrix#0;class#Cipher#0" />
                 <element signature="method#main#0;class#Cipher#0" />
                 <element signature="e#2872#2918#0" />
                 <element signature="method#toString#0;class#Cipher#0" />
@@ -107,7 +95,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="926" />
+    <option name="width" value="929" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -255,12 +243,12 @@
       <workItem from="1527938980781" duration="886000" />
       <workItem from="1527947631385" duration="23436000" />
       <workItem from="1528147088830" duration="3103000" />
-      <workItem from="1528189943158" duration="10625000" />
+      <workItem from="1528189943158" duration="12865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52660000" />
+    <option name="totallyTimeSpent" value="54900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="926" height="1028" extended-state="0" />
@@ -268,7 +256,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.1532738" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.15303983" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -276,11 +264,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3081761" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3081761" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18034557" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18034557" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -393,6 +381,7 @@
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />
@@ -448,6 +437,7 @@
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />
@@ -503,6 +493,7 @@
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />
@@ -558,6 +549,7 @@
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />
@@ -585,6 +577,7 @@
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />
@@ -668,6 +661,7 @@
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />
@@ -797,14 +791,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+        <state relative-caret-position="464">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#103#127#0" expanded="true" />
             <element signature="method#columnSizer#0;class#Cipher#0" />
             <element signature="docComment;method#reducer#0;class#Cipher#0" />
             <element signature="method#reducer#0;class#Cipher#0" />
+            <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#main#0;class#Cipher#0" />
             <element signature="e#2872#2918#0" />
             <element signature="method#toString#0;class#Cipher#0" />

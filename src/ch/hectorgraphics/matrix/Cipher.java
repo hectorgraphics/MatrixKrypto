@@ -12,6 +12,7 @@ public class Cipher {
 	private List<Integer> msgIntVal;
 	private char[] msgChar;
 	private int[][] matrix;
+	private int[][] transMat;
 	private final int SHAPER = 4;
 
 	public Cipher(String msg) {
@@ -19,17 +20,15 @@ public class Cipher {
 		msgChar = msg.toCharArray();
 		msgIntVal = new ArrayList<>();
 
-		for (int i = 0; i < msgChar.length; i++) {
-			msgList.add(msgChar[i]); // brings the message into an array
-		}
+		System.out.println("Current Message: " + msg);
 		start();
 	}
 
 	public void start() {
-		System.out.println("Current message: " + msgList.toString());
 		encipher(msgChar);
-		reshaper(msgIntVal);
+		reshape(msgIntVal);
 		transpose(matrix);
+		addOfMatrix(msgIntVal, msgIntVal);
 	}
 
 	/**
@@ -53,8 +52,8 @@ public class Cipher {
 	 * @param entry is the original message in the encoded format
 	 * @return the encoded message as a  4 x m
 	 */
-	private int[][] reshaper(List<Integer> entry) {
-		System.out.println("Reshaper Parameter = " + entry);
+	private int[][] reshape(List<Integer> entry) {
+		System.out.println("Encoded Value: " + entry);
 		// ROW = 4, COLUMN = Entry / ROW
 		matrix = new int[SHAPER + 1][columnSizer(entry, SHAPER)];
 		var counter = 0;
@@ -74,6 +73,7 @@ public class Cipher {
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
+		System.out.println("Before shaping up the values");
 		dispMatrix(reducer(matrix));
 
 		return matrix;
@@ -100,27 +100,45 @@ public class Cipher {
 
 	/**
 	 *
-	 * @param matEntry
+	 * @param matEntry takes the original matrix and transposes it
 	 */
-	private void transpose(int[][] matEntry) {
+	private int[][] transpose(int[][] matEntry) {
 		System.out.println("==================================");
-		System.out.println("  ******** TRANSPOSE ************");
+		System.out.println("  ***** TRANSPOSED MATRIX *****");
 		System.out.println("==================================");
-		var newMatrix = new int[matEntry[0].length][SHAPER];
+		transMat = new int[matEntry[0].length][SHAPER];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
 		try {
 			for (row = 0; row < matEntry.length; row++) {
 				for (col = 0; col < matEntry[0].length; col++) {
-					newMatrix[col][row] = matEntry[row][col];
+					transMat[col][row] = matEntry[row][col];
 				}
 			}
 
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
-		dispMatrix(newMatrix);
+		dispMatrix(transMat);
+		return transMat;
+	}
+
+	/**
+	 *
+	 * @param matA gets the first matrix
+	 * @param matB
+	 * @return
+	 */
+	private List<Integer> addOfMatrix(List<Integer> matA, List<Integer> matB) {
+		var addMatrix = new ArrayList<Integer>();
+		var iterA = matA.iterator();
+		var iterB = matB.iterator();
+		while (iterA.hasNext()){
+			addMatrix.add(iterA.next() + iterB.next());
+		}
+		reshape(addMatrix);
+		return addMatrix;
 	}
 
 	private void dispMatrix(int[][] matrix) {
@@ -128,7 +146,7 @@ public class Cipher {
 		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for (int j = 0; j < matrix[i].length; j++) {
-				if (matrix[i][j] < 11)
+				if (matrix[i][j] < 10)
 					System.out.print(matrix[i][j] + "  | ");
 				else
 					System.out.print(matrix[i][j] + " | ");
