@@ -14,7 +14,6 @@ public class Cipher {
 	private List<Integer> msgIntVal;
 	private String msg2;
 	private char[] msgChar1;
-//	private int[][] matrix;
 	private double[][] transMat;
 	private final int SHAPER = 4;
 
@@ -23,13 +22,13 @@ public class Cipher {
 		msgChar1 = msg.toCharArray();
 		msgIntVal = new ArrayList<>();
 
-//		System.out.println("Current Message: " + msg);
+		//		System.out.println("Current Message: " + msg);
 		start();
 	}
 
 	public void start() {
-				encipher(msgChar1);
-				reshape(msgIntVal);
+		encipher(msgChar1);
+		reshape(msgIntVal);
 		//		transpose(matrix);
 		//		addOfMatrix(msgIntVal, msgIntVal);
 		//		scalarMul(msgIntVal, 4);
@@ -74,7 +73,7 @@ public class Cipher {
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
-//		dispMatrix(reducer(matrix));
+		//		dispMatrix(reducer(matrix));
 		return matrix;
 	}
 
@@ -105,10 +104,10 @@ public class Cipher {
 	 * @param matEntry takes the original matrix and transposes it
 	 */
 	private double[][] transpose(double[][] matEntry) {
-		System.out.println();
-		System.out.println("==================================");
-		System.out.println("  ***** TRANSPOSED MATRIX *****");
-		System.out.println("==================================");
+		//		System.out.println();
+		//		System.out.println("==================================");
+		//		System.out.println("  ***** TRANSPOSED MATRIX *****");
+		//		System.out.println("==================================");
 		transMat = new double[matEntry[0].length][matEntry.length];
 		var counter = 0;
 		var row = 0;
@@ -123,7 +122,7 @@ public class Cipher {
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
-//		dispMatrix(transMat);
+		//		dispMatrix(transMat);
 		return transMat;
 	}
 
@@ -164,7 +163,6 @@ public class Cipher {
 	}
 
 	/**
-	 *
 	 * @param matA is the first matrix
 	 * @param matB is the second matrix
 	 * @return returns a new matrix of size n x n
@@ -177,10 +175,11 @@ public class Cipher {
 
 		var resultMat = new double[matA.length][matB[0].length];
 		if (matA.length != matB[0].length) {
-			System.err.println("Please change the size of the matrix so that the column or row are equal!!!");;
+			System.err.println("Please change the size of the matrix so that the column or row are equal!!!");
+			;
 			throw new IllegalFormatWidthException(matA[0].length - matB.length);
 		}
-			try {
+		try {
 			/* Loop through each and get product, then sum up and store the value */
 			for (int i = 0; i < matA.length; i++) {
 				for (int j = 0; j < matB[0].length; j++) {
@@ -199,23 +198,57 @@ public class Cipher {
 	}
 
 	/**
-	 *
 	 * @param originalMat
 	 * @return the inverse of a SQUARE matrix
 	 */
 	private double[][] inverse(double[][] originalMat) {
 		System.out.println();
-		System.out.println("========================================");
-		System.out.println("    ***** INVERSE OF MATRIX *****");
-		System.out.println("========================================");
+		System.out.println("==========================================================");
+		System.out.println("     ************** INVERSE OF MATRIX **************");
+		System.out.println("==========================================================");
 
 		var invMat = new double[originalMat.length * 2][originalMat[0].length * 2];
 		var determinant = determinantFinder(originalMat);
+		invMat = transpose(matrixMerger(originalMat, matIndentityCreator(originalMat.length, originalMat.length)));
+		swap(invMat, 0, 1);
 
-		invMat = matrixMerger(originalMat, matIndentityCreator(originalMat.length, originalMat.length));
 		dispMatrix(invMat);
-		dispMatrix(transpose(invMat));
 		return invMat;
+	}
+
+	private double[][] swap(double[][] mat, int at, int with) {
+		var tempMt = new double[mat.length][mat[0].length];
+		var tempRowList = new ArrayList<Double>();
+		var rowList = new ArrayList<Double>();
+		for (var row = 0; row < mat.length; row++) {
+			for (var col = 0; col < mat.length; col++) {
+				if (mat[0][0] == 0) {
+					int rowWithHighestValueInFirstColumn = 0;
+					for (int i = 0; i < mat[0].length; i++) {
+						// store the value of highest row
+						double temp = mat[rowWithHighestValueInFirstColumn+1][i];
+						// swap the value of highest row with first row
+						mat[rowWithHighestValueInFirstColumn][i] = mat[0][i];
+						// set the value of first row that is stored in temp
+						mat[0][i] = temp;
+						rowWithHighestValueInFirstColumn++;
+					}
+				}
+
+				if (mat[row][0] == 1) {
+					int rowWithHighestValueInFirstColumn = 1;
+					for (int i = 0; i < mat[rowWithHighestValueInFirstColumn].length; i++) {
+						// store the value of highest row
+						double temp = mat[rowWithHighestValueInFirstColumn][i];
+						// swap the value of highest row with first row
+						mat[rowWithHighestValueInFirstColumn][i] = mat[0][i];
+						// set the value of first row that is stored in temp
+						mat[0][i] = temp;
+					}
+				}
+			}
+		}System.out.println(tempRowList);
+			return mat;
 	}
 
 	private double[][] matrixMerger(double[][] mat1, double[][] mat2) {
@@ -232,9 +265,9 @@ public class Cipher {
 	private double[][] matIndentityCreator(int row, int col) {
 		var idMat = new double[row][col];
 		for (int i = 0, j = 0; i < row; i++, j++) {
-				idMat[i][j] = 1;
+			idMat[i][j] = 1;
 		}
-//		dispMatrix(idMat);
+		//		dispMatrix(idMat);
 		return idMat;
 	}
 
@@ -243,33 +276,33 @@ public class Cipher {
 	}
 
 	/**
-	 *
 	 * @param matrix is the matrix to be displayed
 	 */
 	private void dispMatrix(double[][] matrix) {
-//		var counter = 1L;
-		System.out.println("-----------------------------------");
+		//		var counter = 1L;
+		System.out.println("---------------------------------------------------------");
 		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for (int j = 0; j < matrix[i].length; j++) {
 				if (matrix[i][j] < 10) {
 					System.out.print(matrix[i][j] + "  | ");
-				}
-				else if (matrix[i][j] > 99)
+				} else if (matrix[i][j] > 99) {
 					System.out.print(matrix[i][j] + "  | ");
-				else
+				} else {
 					System.out.print(matrix[i][j] + " | ");
+				}
 			}
 			System.out.println();
-			System.out.println("-----------------------------------");
-//			System.out.println("\nCounter: " + counter++);
+			System.out.println("---------------------------------------------------------");
+			//			System.out.println("\nCounter: " + counter++);
 		}
 	}
 
 	/**
-	 *        Always multiplies the row of matrix A by column of matrix B
-	 * @param n represents the row
-	 * @param m represents the column
+	 * Always multiplies the row of matrix A by column of matrix B
+	 *
+	 * @param n      represents the row
+	 * @param m      represents the column
 	 * @param maxVal is number representing the
 	 * @return a matrix with size n x m within the maxVal limit determined
 	 */
@@ -292,10 +325,10 @@ public class Cipher {
 		Cipher cipher = new Cipher(currentMsg); // TODO: To be modified so that it takes args instead of an input
 		// fixme: doesn't work if the matrix row is not the same size as the column of the seccond matrix OR
 		// fixme: if the row or column is greater than 3
-//		var mat1 = cipher.matrixGenerator(3, 4, 21);
-//		var mat2 = cipher.matrixGenerator(4, 3, 10);
-		var matInverse = cipher.matrixGenerator(4, 4, 21);
-//		cipher.mulOfMat(mat1, mat2);
+		//		var mat1 = cipher.matrixGenerator(3, 4, 21);
+		//		var mat2 = cipher.matrixGenerator(4, 3, 10);
+		var matInverse = cipher.matrixGenerator(4, 4, 5);
+		//		cipher.mulOfMat(mat1, mat2);
 		cipher.inverse(matInverse);
 
 	}
