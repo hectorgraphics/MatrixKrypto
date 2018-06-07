@@ -14,7 +14,7 @@ public class Cipher {
 	private String msg2;
 	private char[] msgChar1;
 //	private int[][] matrix;
-	private int[][] transMat;
+	private double[][] transMat;
 	private final int SHAPER = 4;
 
 	public Cipher(String msg) {
@@ -54,9 +54,9 @@ public class Cipher {
 	 * @param entry is the original message in the encoded format
 	 * @return the encoded message as a  4 x m
 	 */
-	private int[][] reshape(List<Integer> entry) {
+	private double[][] reshape(List<Integer> entry) {
 		// ROW = 4, COLUMN = Entry / ROW
-		var matrix = new int[SHAPER + 1][columnSizer(entry)];
+		var matrix = new double[SHAPER + 1][columnSizer(entry)];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
@@ -90,8 +90,8 @@ public class Cipher {
 	 * @param originalMat takes the originalMat
 	 * @return the matrix with the last line removed
 	 */
-	private int[][] reducer(int[][] originalMat) {
-		var newMatrix = new int[originalMat.length - 1][originalMat[0].length];
+	private double[][] reducer(double[][] originalMat) {
+		var newMatrix = new double[originalMat.length - 1][originalMat[0].length];
 		for (int i = 0; i < newMatrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			for (int j = 0; j < newMatrix[i].length; j++) {
 				newMatrix[i][j] = originalMat[i][j];
@@ -103,12 +103,12 @@ public class Cipher {
 	/**
 	 * @param matEntry takes the original matrix and transposes it
 	 */
-	private int[][] transpose(int[][] matEntry) {
+	private double[][] transpose(int[][] matEntry) {
 		System.out.println();
 		System.out.println("==================================");
 		System.out.println("  ***** TRANSPOSED MATRIX *****");
 		System.out.println("==================================");
-		transMat = new int[matEntry[0].length][SHAPER];
+		transMat = new double[matEntry[0].length][SHAPER];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
@@ -168,13 +168,13 @@ public class Cipher {
 	 * @param matB is the second matrix
 	 * @return returns a new matrix of size n x n
 	 */
-	private int[][] mulOfMat(int[][] matA, int[][] matB) {
+	private double[][] mulOfMat(double[][] matA, double[][] matB) {
 		System.out.println();
 		System.out.println("========================================");
 		System.out.println("  ***** MUTIPLICATION OF MATRIX *****");
 		System.out.println("========================================");
 
-		var resultMat = new int[matA.length][matB[0].length];
+		var resultMat = new double[matA.length][matB[0].length];
 		if (matA.length != matB[0].length) {
 			System.err.println("Please change the size of the matrix so that the column or row are equal!!!");;
 			throw new IllegalFormatWidthException(matA[0].length - matB.length);
@@ -197,20 +197,46 @@ public class Cipher {
 		return resultMat;
 	}
 
+	private double[][] inverse(double[][] originalMat) {
+		System.out.println();
+		System.out.println("========================================");
+		System.out.println("    ***** INVERSE OF MATRIX *****");
+		System.out.println("========================================");
+
+		var invMat = new double[originalMat.length * 2][originalMat[0].length * 2];
+		var determinant = determinantFinder(originalMat);
+
+		invMat = originalMat + matIndentityCreator(originalMat.length, originalMat.length);
+		return invMat;
+	}
+
+	private double[][] matIndentityCreator(int row, int col) {
+		var idMat = new double[row][col];
+		for (int i = 0, j = 0; i < row; i++, j++) {
+				idMat[i][j] = 1;
+		}
+		dispMatrix(idMat);
+		return idMat;
+	}
+
+	private double determinantFinder(double[][] originalMat) {
+		return 0.0;
+	}
+
 	/**
 	 *
 	 * @param matrix is the matrix to be displayed
 	 */
-	private void dispMatrix(int[][] matrix) {
+	private void dispMatrix(double[][] matrix) {
 //		var counter = 1L;
 		System.out.println("-----------------------------------");
 		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for (int j = 0; j < matrix[i].length; j++) {
 				if (matrix[i][j] < 10)
-					System.out.print(matrix[i][j] + "   | ");
-				else if (matrix[i][j] > 99)
 					System.out.print(matrix[i][j] + " | ");
+				else if (matrix[i][j] > 99)
+					System.out.print(matrix[i][j] + "  | ");
 				else
 					System.out.print(matrix[i][j] + " | ");
 			}
@@ -227,14 +253,14 @@ public class Cipher {
 	 * @param maxVal is number representing the
 	 * @return a matrix with size n x m within the maxVal limit determined
 	 */
-	private int[][] matrixGenerator(int row, int col, int maxVal) {
-		var genMat = new int[row][col];
+	private double[][] matrixGenerator(int row, int col, int maxVal) {
+		var genMat = new double[row][col];
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
 				genMat[i][j] = (int) (Math.random() * maxVal);
 			}
 		}
-//		dispMatrix(genMat);
+		dispMatrix(genMat);
 		return genMat;
 	}
 
@@ -246,9 +272,11 @@ public class Cipher {
 		Cipher cipher = new Cipher(currentMsg); // TODO: To be modified so that it takes args instead of an input
 		// fixme: doesn't work if the matrix row is not the same size as the column of the seccond matrix OR
 		// fixme: if the row or column is greater than 3
-		var mat1 = cipher.matrixGenerator(3, 4, 21);
-		var mat2 = cipher.matrixGenerator(4, 3, 10);
-		cipher.mulOfMat(mat1, mat2);
+//		var mat1 = cipher.matrixGenerator(3, 4, 21);
+//		var mat2 = cipher.matrixGenerator(4, 3, 10);
+		var matInverse = cipher.matrixGenerator(4, 4, 10);
+//		cipher.mulOfMat(mat1, mat2);
+		cipher.inverse(matInverse);
 
 	}
 }
