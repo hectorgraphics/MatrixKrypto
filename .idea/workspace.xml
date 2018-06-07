@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8db95449-390b-488a-9c8e-728c2d21e88d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/ch/hectorgraphics/matrix/Cipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MatrixProject/ch/hectorgraphics/matrix/Cipher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,17 +13,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4441406">
+    <splitter split-orientation="horizontal" split-proportion="0.5062282">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-744">
-                  <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
+                <state relative-caret-position="403">
+                  <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#133#157#0" expanded="true" />
+                    <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+                    <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+                    <element signature="method#mulOfMat#0;class#Cipher#0" />
+                    <element signature="docComment;method#inverse#0;class#Cipher#0" />
+                    <element signature="e#7329#7330#0" expanded="true" />
+                    <element signature="e#7346#7347#0" expanded="true" />
                     <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
                     <element signature="method#dispMatrix#0;class#Cipher#0" />
                   </folding>
@@ -40,11 +44,13 @@
           <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="458">
-                  <caret line="236" column="54" selection-start-line="236" selection-start-column="54" selection-end-line="236" selection-end-column="54" />
+                <state relative-caret-position="577">
+                  <caret line="263" column="66" selection-start-line="263" selection-start-column="66" selection-end-line="263" selection-end-column="66" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#133#157#0" expanded="true" />
+                    <element signature="e#7329#7330#0" expanded="true" />
+                    <element signature="e#7346#7347#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -242,46 +248,46 @@
       <workItem from="1528147088830" duration="3103000" />
       <workItem from="1528189943158" duration="20386000" />
       <workItem from="1528280614389" duration="18396000" />
-      <workItem from="1528395530370" duration="1336000" />
+      <workItem from="1528395530370" duration="5067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82153000" />
+    <option name="totallyTimeSpent" value="85884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1418" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.15252976" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.15252976" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26190478" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="right" id="Run" order="11" visible="true" weight="0.22695312" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.18034557" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info id="simpleUML" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="310" height="678" id="Documentation" order="4" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="PlantUML" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="310" height="678" id="Documentation" order="9" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -374,6 +380,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>
@@ -422,6 +434,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>
@@ -470,6 +488,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>
@@ -518,6 +542,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>
@@ -538,6 +568,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>
@@ -614,6 +650,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>
@@ -724,11 +766,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744">
-          <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
+        <state relative-caret-position="403">
+          <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#133#157#0" expanded="true" />
+            <element signature="docComment;method#addOfMatrix#0;class#Cipher#0" />
+            <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
+            <element signature="method#mulOfMat#0;class#Cipher#0" />
+            <element signature="docComment;method#inverse#0;class#Cipher#0" />
+            <element signature="e#7329#7330#0" expanded="true" />
+            <element signature="e#7346#7347#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
           </folding>

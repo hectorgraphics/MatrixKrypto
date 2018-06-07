@@ -3,6 +3,7 @@ package ch.hectorgraphics.matrix;
 import java.util.ArrayList;
 import java.util.IllegalFormatWidthException;
 import java.util.List;
+import java.util.stream.Stream;
 
 @SuppressWarnings("all")
 public class Cipher {
@@ -103,12 +104,12 @@ public class Cipher {
 	/**
 	 * @param matEntry takes the original matrix and transposes it
 	 */
-	private double[][] transpose(int[][] matEntry) {
+	private double[][] transpose(double[][] matEntry) {
 		System.out.println();
 		System.out.println("==================================");
 		System.out.println("  ***** TRANSPOSED MATRIX *****");
 		System.out.println("==================================");
-		transMat = new double[matEntry[0].length][SHAPER];
+		transMat = new double[matEntry[0].length][matEntry.length];
 		var counter = 0;
 		var row = 0;
 		var col = 0;
@@ -122,7 +123,7 @@ public class Cipher {
 		} catch (IndexOutOfBoundsException ioobe) {
 			ioobe.getMessage();
 		}
-		dispMatrix(transMat);
+//		dispMatrix(transMat);
 		return transMat;
 	}
 
@@ -197,6 +198,11 @@ public class Cipher {
 		return resultMat;
 	}
 
+	/**
+	 *
+	 * @param originalMat
+	 * @return the inverse of a SQUARE matrix
+	 */
 	private double[][] inverse(double[][] originalMat) {
 		System.out.println();
 		System.out.println("========================================");
@@ -206,8 +212,21 @@ public class Cipher {
 		var invMat = new double[originalMat.length * 2][originalMat[0].length * 2];
 		var determinant = determinantFinder(originalMat);
 
-		invMat = originalMat + matIndentityCreator(originalMat.length, originalMat.length);
+		invMat = matrixMerger(originalMat, matIndentityCreator(originalMat.length, originalMat.length));
+		dispMatrix(invMat);
+		dispMatrix(transpose(invMat));
 		return invMat;
+	}
+
+	private double[][] matrixMerger(double[][] mat1, double[][] mat2) {
+		var result = new double[mat1.length + mat2.length][mat1.length + mat2.length];
+		try {
+			System.arraycopy(transpose(mat1), 0, result, 0, mat1.length);
+			System.arraycopy(mat2, 0, result, mat1.length, mat2.length);
+		} catch (ArrayStoreException ase) {
+			ase.printStackTrace();
+		}
+		return result;
 	}
 
 	private double[][] matIndentityCreator(int row, int col) {
@@ -215,7 +234,7 @@ public class Cipher {
 		for (int i = 0, j = 0; i < row; i++, j++) {
 				idMat[i][j] = 1;
 		}
-		dispMatrix(idMat);
+//		dispMatrix(idMat);
 		return idMat;
 	}
 
@@ -233,8 +252,9 @@ public class Cipher {
 		for (int i = 0; i < matrix.length; i++) { // The '-1' doesn't display the last line in the matrix
 			System.out.print("| ");
 			for (int j = 0; j < matrix[i].length; j++) {
-				if (matrix[i][j] < 10)
-					System.out.print(matrix[i][j] + " | ");
+				if (matrix[i][j] < 10) {
+					System.out.print(matrix[i][j] + "  | ");
+				}
 				else if (matrix[i][j] > 99)
 					System.out.print(matrix[i][j] + "  | ");
 				else
@@ -247,7 +267,7 @@ public class Cipher {
 	}
 
 	/**
-	 *         Always multiplies the row of matrix A by column of matrix B
+	 *        Always multiplies the row of matrix A by column of matrix B
 	 * @param n represents the row
 	 * @param m represents the column
 	 * @param maxVal is number representing the
@@ -274,7 +294,7 @@ public class Cipher {
 		// fixme: if the row or column is greater than 3
 //		var mat1 = cipher.matrixGenerator(3, 4, 21);
 //		var mat2 = cipher.matrixGenerator(4, 3, 10);
-		var matInverse = cipher.matrixGenerator(4, 4, 10);
+		var matInverse = cipher.matrixGenerator(4, 4, 21);
 //		cipher.mulOfMat(mat1, mat2);
 		cipher.inverse(matInverse);
 
