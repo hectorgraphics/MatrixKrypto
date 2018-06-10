@@ -210,7 +210,7 @@ public class Cipher {
 
 		var invMat = transpose(matrixMerger(originalMat, matIndentityCreator(originalMat.length, originalMat.length)));
 		dispMatrix(invMat);
-		swap(swap(invMat)); // done twice so that if there are '1s' and '0s' they get underneath each other
+
 		gaussJordan(invMat);
 
 		dispMatrix(invMat);
@@ -218,32 +218,88 @@ public class Cipher {
 	}
 
 	private double[][] gaussJordan(double[][] mat) {
-		return new double[0][];
+		for(var row = 0; row < mat.length; row++) {
+			swap(mat, row); // done twice so that if there are '1s' and '0s' they get underneath each other
+			if (mat[0][0] != 1) {
+				makeOne(mat);
+			}
+			rowElimination(mat, row);
+		}
+		return mat;
 	}
 
-	private double[][] swap(double[][] mat) {
+	/**
+	 * @param mat is the matrix alongside the ID matrix
+	 * @return returns a matrix with the 1 at the very top the zeros underneath.
+	 */
+	private double[][] swap(double[][] mat, int rowToOperate) {
 		try {
-			for (var row = 0; row < mat.length; row++) {
+			for (var row = rowToOperate; row < mat.length; row++) {
 				if (mat[0][0] == 0) {
 					for (var curCol = 0; curCol < mat[0].length; curCol++) {
-								var temp = mat[0][curCol];
-								mat[0][curCol] = mat[1][curCol];
-								mat[1][curCol] = temp;
+						var rowWithNonZero = rowToOperate+1;
+						// FIXME: When uncommented, operates only on the first row and first column
+						// If the next line is also a zero then it looks for none-zero value and bring it up
+//						if (mat[1][0] == 0) {
+//							for (var findNonZero = 0; findNonZero < mat.length; findNonZero++) {
+//								if (mat[findNonZero][0] != 0)
+//									rowWithNonZero = findNonZero;
+//							}
+//						}
+						var temp = mat[0][curCol];
+						mat[0][curCol] = mat[rowWithNonZero][curCol];
+						mat[rowWithNonZero][curCol] = temp;
+
 					}
 				}
 
 				if (mat[row][0] == 1) {
-					for (var curCol = 0; curCol < mat[0].length; curCol++) {
+					for (var curCol = rowToOperate; curCol < mat[0].length; curCol++) {
 						var temp1 = mat[row][curCol];
 						mat[row][curCol] = mat[0][curCol];
 						mat[0][curCol] = temp1;
 					}
 				}
+
 			}
 		} catch (ArrayIndexOutOfBoundsException aiooe) {
 			aiooe.printStackTrace();
 		}
 		return mat;
+	}
+
+	private double[][] rowElimination(double[][] mat, int rowToOperate) {
+		try {
+			for (int row = rowToOperate+1; row < mat.length; row++) {
+				var mainVal = mat[0][0] * mat[row][0]; // get the multiplicity of the value
+				System.out.println(mainVal);
+				for (int col = 0; col < mat[0].length; col++) {
+					var temp = mat[row][col];
+					mat[row][col] = format((mainVal * mat[0][col]) - mat[row][col]);
+				}
+			}
+		} catch (ArrayIndexOutOfBoundsException aoobe) {
+			aoobe.printStackTrace();
+		}
+		return mat;
+	}
+
+	/**
+	 * @param mat is the matrix to be transformed\
+	 * @return returns the matrix with a principal '1'
+	 */
+	private double[][] makeOne(double[][] mat) {
+		var mainVal = mat[0][0];
+		for (var col = 0; col < mat[0].length; col++) {
+			var temp = mat[0][col] / mainVal;
+			mat[0][col] = format(temp);
+		}
+		return mat;
+	}
+
+	// formats the number to 2 decimal points.
+	private double format(double temp) {
+		return Double.parseDouble(String.format("%.2f", temp).replace(",", "."));
 	}
 
 	private double[][] matrixMerger(double[][] mat1, double[][] mat2) {
@@ -324,7 +380,7 @@ public class Cipher {
 		//		var mat2 = cipher.matrixGenerator(4, 3, 10);
 		//		var matInverse = cipher.matrixGenerator(4, 4, 10);
 		//		cipher.mulOfMat(mat1, mat2);
-		var matInverse = new double[][]{{0, 5, 5, 1}, {6, 7, 7, 3}, {4, 5, 1, 4}, {1, 6, 9, 2}};
+		var matInverse = new double[][]{{9, 5, 5, 1}, {6, 7, 7, 3}, {4, 5, 1, 4}, {4, 6, 9, 2}};
 		cipher.inverse(matInverse);
 
 	}

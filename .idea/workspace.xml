@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8db95449-390b-488a-9c8e-728c2d21e88d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixProject/ch/hectorgraphics/matrix/Cipher.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,14 +20,14 @@
             <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1121">
-                  <caret line="326" column="56" selection-start-line="326" selection-start-column="56" selection-end-line="326" selection-end-column="56" />
+                  <caret line="382" column="42" selection-start-line="382" selection-start-column="42" selection-end-line="382" selection-end-column="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#165#189#0" expanded="true" />
-                    <element signature="e#6792#6793#0" expanded="true" />
-                    <element signature="e#6821#6822#0" expanded="true" />
-                    <element signature="e#8405#8406#0" expanded="true" />
-                    <element signature="e#8422#8423#0" expanded="true" />
+                    <element signature="e#9297#9298#0" expanded="true" />
+                    <element signature="e#9376#9377#0" expanded="true" />
+                    <element signature="e#10024#10025#0" expanded="true" />
+                    <element signature="e#10041#10042#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -41,8 +40,8 @@
           <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="682">
-                  <caret line="230" column="54" lean-forward="true" selection-start-line="230" selection-start-column="54" selection-end-line="230" selection-end-column="54" />
+                <state relative-caret-position="209">
+                  <caret line="225" column="35" selection-start-line="225" selection-start-column="35" selection-end-line="225" selection-end-column="35" />
                   <folding>
                     <element signature="method#Cipher#0;class#Cipher#0" />
                     <element signature="method#start#0;class#Cipher#0" />
@@ -65,12 +64,13 @@
                     <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
                     <element signature="method#mulOfMat#0;class#Cipher#0" />
                     <element signature="docComment;method#inverse#0;class#Cipher#0" />
-                    <element signature="e#6792#6793#0" expanded="true" />
-                    <element signature="e#6821#6822#0" expanded="true" />
+                    <element signature="e#7232#7307#0" />
+                    <element signature="e#9297#9298#0" expanded="true" />
+                    <element signature="e#9376#9377#0" expanded="true" />
                     <element signature="method#matrixMerger#0;class#Cipher#0" />
                     <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-                    <element signature="e#8405#8406#0" expanded="true" />
-                    <element signature="e#8422#8423#0" expanded="true" />
+                    <element signature="e#10024#10025#0" expanded="true" />
+                    <element signature="e#10041#10042#0" expanded="true" />
                     <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
                     <element signature="method#dispMatrix#0;class#Cipher#0" />
                     <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -203,7 +203,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -314,7 +314,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92991000" />
+    <option name="totallyTimeSpent" value="98788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1418" extended-state="6" />
@@ -482,12 +482,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -560,12 +561,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -638,12 +640,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -716,12 +719,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -766,12 +770,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -872,12 +877,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
@@ -993,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/hectorgraphics/matrix/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="230" column="54" lean-forward="true" selection-start-line="230" selection-start-column="54" selection-end-line="230" selection-end-column="54" />
+        <state relative-caret-position="209">
+          <caret line="225" column="35" selection-start-line="225" selection-start-column="35" selection-end-line="225" selection-end-column="35" />
           <folding>
             <element signature="method#Cipher#0;class#Cipher#0" />
             <element signature="method#start#0;class#Cipher#0" />
@@ -1017,12 +1023,13 @@
             <element signature="docComment;method#mulOfMat#0;class#Cipher#0" />
             <element signature="method#mulOfMat#0;class#Cipher#0" />
             <element signature="docComment;method#inverse#0;class#Cipher#0" />
-            <element signature="e#6792#6793#0" expanded="true" />
-            <element signature="e#6821#6822#0" expanded="true" />
+            <element signature="e#7232#7307#0" />
+            <element signature="e#9297#9298#0" expanded="true" />
+            <element signature="e#9376#9377#0" expanded="true" />
             <element signature="method#matrixMerger#0;class#Cipher#0" />
             <element signature="method#matIndentityCreator#0;class#Cipher#0" />
-            <element signature="e#8405#8406#0" expanded="true" />
-            <element signature="e#8422#8423#0" expanded="true" />
+            <element signature="e#10024#10025#0" expanded="true" />
+            <element signature="e#10041#10042#0" expanded="true" />
             <element signature="docComment;method#dispMatrix#0;class#Cipher#0" />
             <element signature="method#dispMatrix#0;class#Cipher#0" />
             <element signature="docComment;method#matrixGenerator#0;class#Cipher#0" />
