@@ -1,5 +1,6 @@
 package ch.hectorgraphics.matrix;
 
+import java.awt.event.MouseAdapter;
 import java.util.ArrayList;
 import java.util.IllegalFormatWidthException;
 import java.util.List;
@@ -207,48 +208,42 @@ public class Cipher {
 		System.out.println("     ************** INVERSE OF MATRIX **************");
 		System.out.println("==========================================================");
 
-		var invMat = new double[originalMat.length * 2][originalMat[0].length * 2];
-		var determinant = determinantFinder(originalMat);
-		invMat = transpose(matrixMerger(originalMat, matIndentityCreator(originalMat.length, originalMat.length)));
-		swap(invMat, 0, 1);
+		var invMat = transpose(matrixMerger(originalMat, matIndentityCreator(originalMat.length, originalMat.length)));
+		dispMatrix(invMat);
+		swap(swap(invMat)); // done twice so that if there are '1s' and '0s' they get underneath each other
+		gaussJordan(invMat);
 
 		dispMatrix(invMat);
 		return invMat;
 	}
 
-	private double[][] swap(double[][] mat, int at, int with) {
-		var tempMt = new double[mat.length][mat[0].length];
-		var tempRowList = new ArrayList<Double>();
-		var rowList = new ArrayList<Double>();
-		for (var row = 0; row < mat.length; row++) {
-			for (var col = 0; col < mat.length; col++) {
+	private double[][] gaussJordan(double[][] mat) {
+		return new double[0][];
+	}
+
+	private double[][] swap(double[][] mat) {
+		try {
+			for (var row = 0; row < mat.length; row++) {
 				if (mat[0][0] == 0) {
-					int rowWithHighestValueInFirstColumn = 0;
-					for (int i = 0; i < mat[0].length; i++) {
-						// store the value of highest row
-						double temp = mat[rowWithHighestValueInFirstColumn+1][i];
-						// swap the value of highest row with first row
-						mat[rowWithHighestValueInFirstColumn][i] = mat[0][i];
-						// set the value of first row that is stored in temp
-						mat[0][i] = temp;
-						rowWithHighestValueInFirstColumn++;
+					for (var curCol = 0; curCol < mat[0].length; curCol++) {
+								var temp = mat[0][curCol];
+								mat[0][curCol] = mat[1][curCol];
+								mat[1][curCol] = temp;
 					}
 				}
 
 				if (mat[row][0] == 1) {
-					int rowWithHighestValueInFirstColumn = 1;
-					for (int i = 0; i < mat[rowWithHighestValueInFirstColumn].length; i++) {
-						// store the value of highest row
-						double temp = mat[rowWithHighestValueInFirstColumn][i];
-						// swap the value of highest row with first row
-						mat[rowWithHighestValueInFirstColumn][i] = mat[0][i];
-						// set the value of first row that is stored in temp
-						mat[0][i] = temp;
+					for (var curCol = 0; curCol < mat[0].length; curCol++) {
+						var temp1 = mat[row][curCol];
+						mat[row][curCol] = mat[0][curCol];
+						mat[0][curCol] = temp1;
 					}
 				}
 			}
-		}System.out.println(tempRowList);
-			return mat;
+		} catch (ArrayIndexOutOfBoundsException aiooe) {
+			aiooe.printStackTrace();
+		}
+		return mat;
 	}
 
 	private double[][] matrixMerger(double[][] mat1, double[][] mat2) {
@@ -327,8 +322,9 @@ public class Cipher {
 		// fixme: if the row or column is greater than 3
 		//		var mat1 = cipher.matrixGenerator(3, 4, 21);
 		//		var mat2 = cipher.matrixGenerator(4, 3, 10);
-		var matInverse = cipher.matrixGenerator(4, 4, 5);
+		//		var matInverse = cipher.matrixGenerator(4, 4, 10);
 		//		cipher.mulOfMat(mat1, mat2);
+		var matInverse = new double[][]{{0, 5, 5, 1}, {6, 7, 7, 3}, {4, 5, 1, 4}, {1, 6, 9, 2}};
 		cipher.inverse(matInverse);
 
 	}
